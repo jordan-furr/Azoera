@@ -1,29 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="077-zL-3Ry">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="077-zL-3Ry">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Fancy View Controller-->
         <scene sceneID="Qrn-D2-Qel">
             <objects>
-                <viewController id="077-zL-3Ry" sceneMemberID="viewController">
+                <viewController id="077-zL-3Ry" customClass="FancyViewController" customModule="Azoera" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mxe-tz-jih">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="X2f-wP-otQ">
+                                <rect key="frame" x="138" y="260" width="255" height="172"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your email here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dh8-cd-GhN">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="48"/>
+                                        <color key="backgroundColor" name="blackOverlay"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="03t-cN-002">
+                                        <rect key="frame" x="0.0" y="62" width="255" height="48"/>
+                                        <color key="backgroundColor" name="blackOverlay"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rxz-q7-bKC">
+                                        <rect key="frame" x="0.0" y="124" width="255" height="48"/>
+                                        <color key="backgroundColor" name="blackOverlay"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40.5" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-wh-Irg">
+                                <rect key="frame" x="0.0" y="260" width="138" height="172"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPM-Xp-WIT">
+                                        <rect key="frame" x="47" y="0.0" width="44" height="99.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Log in"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJw-Vl-hdH">
+                                        <rect key="frame" x="41.5" y="140" width="55" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Sign up"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="jww-sc-ELh">
+                                <rect key="frame" x="288" y="446" width="73" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4T-rU-9a7">
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="29"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sc9-jA-eWO">
+                                        <rect key="frame" x="43" y="0.0" width="30" height="29"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <state key="normal" title="FAQ">
+                                            <color key="titleColor" name="button green"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeD-Ys-syR">
+                                <rect key="frame" x="138" y="522" width="196" height="44"/>
+                                <color key="backgroundColor" name="button green"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="Sign me up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="48b-bA-8Ml">
+                                <rect key="frame" x="47" y="140.5" width="217" height="71.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Azoera" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LB-o3-LbJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="217" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in or sign up to explore new Azoera features" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLW-7P-07i">
+                                        <rect key="frame" x="0.0" y="33.5" width="217" height="38"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="azoreoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="8Kd-Zt-SxZ">
+                                <rect key="frame" x="47" y="60" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8Kd-Zt-SxZ" secondAttribute="height" multiplier="1:1" id="bX5-Yb-jsg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="eWo-wh-Irg" firstAttribute="height" secondItem="X2f-wP-otQ" secondAttribute="height" id="1tz-6o-txw"/>
+                            <constraint firstItem="OeD-Ys-syR" firstAttribute="height" secondItem="Mxe-tz-jih" secondAttribute="height" multiplier="0.0653" id="2Ha-hU-u1v"/>
+                            <constraint firstItem="X2f-wP-otQ" firstAttribute="centerX" secondItem="3xF-VL-GRw" secondAttribute="centerX" multiplier="1.415" id="4MN-bf-Owh"/>
+                            <constraint firstItem="48b-bA-8Ml" firstAttribute="width" secondItem="Mxe-tz-jih" secondAttribute="width" multiplier="0.579" id="9kO-oK-3fH"/>
+                            <constraint firstItem="OeD-Ys-syR" firstAttribute="top" secondItem="X2f-wP-otQ" secondAttribute="bottom" constant="90" id="Dma-Th-pbG"/>
+                            <constraint firstItem="X2f-wP-otQ" firstAttribute="centerY" secondItem="3xF-VL-GRw" secondAttribute="centerY" multiplier="1.038" id="E2g-Ql-WEO"/>
+                            <constraint firstItem="jww-sc-ELh" firstAttribute="top" secondItem="X2f-wP-otQ" secondAttribute="bottom" constant="14" id="MuG-zb-YxE"/>
+                            <constraint firstItem="OeD-Ys-syR" firstAttribute="width" secondItem="Mxe-tz-jih" secondAttribute="width" multiplier="0.523" id="N9s-4m-R7I"/>
+                            <constraint firstItem="X2f-wP-otQ" firstAttribute="leading" secondItem="eWo-wh-Irg" secondAttribute="trailing" id="QoB-3z-FFR"/>
+                            <constraint firstItem="Dh8-cd-GhN" firstAttribute="height" secondItem="Mxe-tz-jih" secondAttribute="height" multiplier="0.072" id="YAa-3e-Go4"/>
+                            <constraint firstItem="X2f-wP-otQ" firstAttribute="width" secondItem="Mxe-tz-jih" secondAttribute="width" multiplier="0.68" id="c5Z-kv-Ri5"/>
+                            <constraint firstItem="48b-bA-8Ml" firstAttribute="centerY" secondItem="3xF-VL-GRw" secondAttribute="centerY" multiplier="0.528" id="d6b-Gv-r37"/>
+                            <constraint firstItem="eWo-wh-Irg" firstAttribute="top" secondItem="X2f-wP-otQ" secondAttribute="top" id="eIg-Vh-njR"/>
+                            <constraint firstItem="eWo-wh-Irg" firstAttribute="leading" secondItem="3xF-VL-GRw" secondAttribute="leading" id="hqK-i5-S1S"/>
+                            <constraint firstItem="8Kd-Zt-SxZ" firstAttribute="leading" secondItem="48b-bA-8Ml" secondAttribute="leading" id="iX1-Lt-Fx9"/>
+                            <constraint firstItem="OeD-Ys-syR" firstAttribute="leading" secondItem="X2f-wP-otQ" secondAttribute="leading" id="l2w-yL-Ve7"/>
+                            <constraint firstItem="QLW-7P-07i" firstAttribute="leading" secondItem="mPM-Xp-WIT" secondAttribute="leading" id="nDl-Wr-lM9"/>
+                            <constraint firstItem="8Kd-Zt-SxZ" firstAttribute="centerY" secondItem="3xF-VL-GRw" secondAttribute="centerY" multiplier="0.24" id="q56-G6-oBh"/>
+                            <constraint firstItem="3xF-VL-GRw" firstAttribute="trailing" secondItem="jww-sc-ELh" secondAttribute="trailing" constant="14" id="ua7-uT-qgc"/>
+                            <constraint firstItem="8Kd-Zt-SxZ" firstAttribute="width" secondItem="Mxe-tz-jih" secondAttribute="width" multiplier="0.107" id="w6l-Xs-tFP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3xF-VL-GRw"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmpasswordtextfield" destination="Rxz-q7-bKC" id="sAe-pC-gJ3"/>
+                        <outlet property="emailtextfield" destination="Dh8-cd-GhN" id="g4i-7P-BSE"/>
+                        <outlet property="faqbutton" destination="sc9-jA-eWO" id="cxu-2U-8Su"/>
+                        <outlet property="loginbutton" destination="mPM-Xp-WIT" id="3jm-zg-8a0"/>
+                        <outlet property="passwordtextfield" destination="03t-cN-002" id="8Yn-wz-Y1x"/>
+                        <outlet property="signmeupbutton" destination="OeD-Ys-syR" id="Yv8-EY-9Kl"/>
+                        <outlet property="signupbutton" destination="VJw-Vl-hdH" id="cCc-xC-bJW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqE-hM-zlf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="947" y="150"/>
+            <point key="canvasLocation" x="946.39999999999998" y="149.77511244377811"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="azoreoIcon" width="40" height="40"/>
+        <namedColor name="background">
+            <color red="0.082352941176470587" green="0.086274509803921567" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blackOverlay">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.11999999731779099" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="button green">
+            <color red="0.0" green="0.73333333333333328" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

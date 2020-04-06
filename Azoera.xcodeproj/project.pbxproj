@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C576E6A9243BA5130093A90D /* FancyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576E6A8243BA5130093A90D /* FancyViewController.swift */; };
 		F73DEEA4223AF4550023C6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DEEA3223AF4550023C6C6 /* AppDelegate.swift */; };
 		F73DEEA9223AF4550023C6C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73DEEA7223AF4550023C6C6 /* Main.storyboard */; };
 		F73DEEAB223AF4570023C6C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73DEEAA223AF4570023C6C6 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C576E6A8243BA5130093A90D /* FancyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyViewController.swift; sourceTree = "<group>"; };
 		F73DEEA0223AF4550023C6C6 /* Azoera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azoera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73DEEA3223AF4550023C6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F73DEEA8223AF4550023C6C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				F763B97E22526D11005697E5 /* Fonts */,
 				F73DEEA3223AF4550023C6C6 /* AppDelegate.swift */,
 				F73DEEA7223AF4550023C6C6 /* Main.storyboard */,
+				C576E6A8243BA5130093A90D /* FancyViewController.swift */,
 				F7E00FC822455CBA00B51EFA /* Colors.xcassets */,
 				F73DEEAA223AF4570023C6C6 /* Assets.xcassets */,
 				F73DEEAC223AF4570023C6C6 /* LaunchScreen.storyboard */,
@@ -177,6 +180,7 @@
 			files = (
 				F73DEEA4223AF4550023C6C6 /* AppDelegate.swift in Sources */,
 				F763B96C2252693E005697E5 /* StyleGuide.swift in Sources */,
+				C576E6A9243BA5130093A90D /* FancyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
